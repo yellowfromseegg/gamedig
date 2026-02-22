@@ -308,6 +308,7 @@
 | teamfortress2        | Team Fortress 2                                  | [Valve Protocol](#valve)                         |
 | teamspeak2           | Teamspeak 2                                      |                                                  |
 | teamspeak3           | Teamspeak 3                                      | [Notes](#teamspeak3)                             |
+| teamspeak6           | Teamspeak 6                                      | [Notes](#teamspeak6)                             |
 | terminus             | Terminus                                         |                                                  |
 | terrariatshock       | Terraria - TShock                                | [Notes](#terraria)                               |
 | tfc                  | Team Fortress Classic                            | [Valve Protocol](#valve)                         |
