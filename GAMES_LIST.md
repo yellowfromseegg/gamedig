@@ -464,6 +464,10 @@ For teamspeak 3 queries to work correctly, the following permissions must be ava
 In the extremely unusual case that your server host responds to queries on a non-default port (the default is 10011),
 you can specify their host query port using the teamspeakQueryPort option.
 
+### <a name="teamspeak6"></a>TeamSpeak 6
+For teamspeak 3 queries to work correctly, you need the queryport of the teamspeak server. Its displayed in the log of the initial server start.
+It can be set with teamspeakQueryPort
+
 ### <a name="terraria"></a>Terraria
 Requires tshock server mod, and a REST user token, which can be passed to GameDig with the
 additional option: `token`
