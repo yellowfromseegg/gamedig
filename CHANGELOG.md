@@ -1,8 +1,18 @@
 
 ## To Be Released...
 ## 5.X.Y
+* Fix: ignore stale player list entries (By @cetteup #744)
+
+## 5.3.2
 * Fix: detect BFBC2 Vietnam DLC as BFBC2 (By @cetteup #713)
 * Feat: SCP: Secret Laboratory (2020) - Added support (#715, thanks @Draakoor)
+* Fix: Farming Simulator handle possible missing mod attribute (By @yellowfromseegg #723)
+* Fix: BeamMP would not match on given port (#730)
+* Fix: version field would sometimes be a Number type (#735)
+* Feat: Squad - Replace Valve protocol with EOS protocol (By @k3ithos #731)
+* Feat: Clive Barker's Undying - Added support (By @dgibbs64 #733)
+* Chore: Update `iconv-lite` from `0.6.3` to `0.7.0` (#737)
+* Fix: ASA - change EOS usage (#739, thanks @mze9412)
 
 ## 5.3.1
 * Fix: HTTP requests would end up making more retries than needed due to got's internal retry mechanism (#690, thanks @RattleSN4K3)
