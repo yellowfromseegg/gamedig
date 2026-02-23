@@ -465,8 +465,8 @@ In the extremely unusual case that your server host responds to queries on a non
 you can specify their host query port using the teamspeakQueryPort option.
 
 ### <a name="teamspeak6"></a>TeamSpeak 6
-For teamspeak 3 queries to work correctly, you need the queryport of the teamspeak server. Its displayed in the log of the initial server start.
-It can be set with teamspeakQueryPort
+For teamspeak 6 queries to work correctly, you need the http queryport and the API-Key of the teamspeak 6 server. The API-Key is displayed in the log of the **first** server start.
+The queryport gets set with the teamspeakQueryPort option, the API-Key gets set with the token option.
 
 ### <a name="terraria"></a>Terraria
 Requires tshock server mod, and a REST user token, which can be passed to GameDig with the
