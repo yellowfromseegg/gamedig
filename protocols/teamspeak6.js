@@ -2,6 +2,11 @@ import Core from './core.js'
 
 export default class teamspeak6 extends Core {
   async run (state) {
+    
+    // Prevent Core.request() from TCP-connecting to the voice port before the HTTP request.
+    // TS6 WebQuery is HTTP-only; setting usedTcp=true skips the internal tcpPing() call.
+    this.usedTcp = true
+    
     const queryPort = this.options.teamspeakQueryPort || 10080
 
     // Reuse built-in GameDig "token" option as the TS6 API key
