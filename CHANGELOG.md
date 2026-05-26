@@ -1,6 +1,10 @@
 
 ## To Be Released...
 ## 5.X.Y
+* Feat: American Truck Simulator - Added support (#768)
+* Feat: The Cenozoic Era - Added support (#768)
+* Feat: VEIN - Added support (#768)
+* Feat: Mindustry - Added support (#768)
 
 ## 5.3.3
 * Fix: ignore stale player list entries (By @cetteup #744)
