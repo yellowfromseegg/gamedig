@@ -28,6 +28,7 @@
 | asr08                | Arca Sim Racing '08                              |                                                  |
 | assettocorsa         | Assetto Corsa                                    |                                                  |
 | atlas                | Atlas                                            | [Valve Protocol](#valve)                         |
+| ats                  | American Truck Simulator                         | [Valve Protocol](#valve)                         |
 | avorion              | Avorion                                          | [Valve Protocol](#valve)                         |
 | avp2                 | Aliens versus Predator 2                         |                                                  |
 | avp2010              | Aliens vs. Predator 2010                         | [Valve Protocol](#valve)                         |
@@ -190,6 +191,7 @@
 | mbe                  | Minecraft: Bedrock Edition                       |                                                  |
 | medievalengineers    | Medieval Engineers                               | [Valve Protocol](#valve)                         |
 | mgm                  | Mumble - GT Murmur                               | [Notes](#mumble)                                 |
+| mindustry            | Mindustry                                        |                                                  |
 | minecraft            | Minecraft                                        | [Notes](#minecraft)                              |
 | minetest             | Minetest                                         |                                                  |
 | mnc                  | Monday Night Combat                              | [Valve Protocol](#valve)                         |
@@ -303,6 +305,7 @@
 | synergy              | Synergy                                          | [Valve Protocol](#valve)                         |
 | t1s                  | Tribes 1: Starsiege                              |                                                  |
 | tacticalops          | Tactical Ops                                     |                                                  |
+| tce                  | The Cenozoic Era                                 | [Valve Protocol](#valve)                         |
 | tcgraw               | Tom Clancy's Ghost Recon Advanced Warfighter     |                                                  |
 | tcgraw2              | Tom Clancy's Ghost Recon Advanced Warfighter 2   |                                                  |
 | teamfactor           | Team Factor                                      |                                                  |
@@ -345,6 +348,7 @@
 | valheim              | Valheim                                          | [Notes](#valheim), [Valve Protocol](#valve)      |
 | vampireslayer        | Vampire Slayer                                   | [Valve Protocol](#valve)                         |
 | vcm                  | Vice City Multiplayer                            |                                                  |
+| vein                 | VEIN                                             | [Valve Protocol](#valve)                         |
 | ventrilo             | Ventrilo                                         |                                                  |
 | vietcong             | Vietcong                                         |                                                  |
 | vietcong2            | Vietcong 2                                       |                                                  |
