@@ -1,6 +1,8 @@
 
 ## To Be Released...
 ## 5.X.Y
+
+## 5.3.3
 * Fix: ignore stale player list entries (By @cetteup #744)
 * Feat: Plutonium - Added support (#745)
 * Fix: Soulmask set version from rules if available (By @podrivo #772)
