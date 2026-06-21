@@ -470,8 +470,9 @@ In the extremely unusual case that your server host responds to queries on a non
 you can specify their host query port using the teamspeakQueryPort option.
 
 ### <a name="teamspeak6"></a>TeamSpeak 6
-For teamspeak 6 queries to work correctly, you need the voice port, http queryport and the API-Key of the teamspeak 6 server. The API-Key is displayed in the log of the **first** server start.
-To identify different virtualServers the specific Voice Port of the server is needed.
+Requires the API key passed as `token` (displayed in the logs of the **first** server start).
+The HTTP query port is passed as `teamspeakQueryPort` (it is different from `port`, which is the voice port).
+If no `port` is passed but the query succeeds, an error listing the available ports will be returned.
 
 Needed Options:
 | option              | Value            | Default   |

@@ -2,14 +2,10 @@ import Core from './core.js'
 
 export default class teamspeak6 extends Core {
   async run (state) {
-    
-    // Prevent Core.request() from TCP-connecting to the voice port before the HTTP request.
-    // TS6 WebQuery is HTTP-only; setting usedTcp=true skips the internal tcpPing() call.
     this.usedTcp = true
-    
+
     const queryPort = this.options.teamspeakQueryPort || 10080
 
-    // Reuse built-in GameDig "token" option as the TS6 API key
     const apiKey = this.options.token
     if (!apiKey) {
       throw new Error('TeamSpeak 6 HTTP query requires an API key. Pass it via options.token.')
@@ -35,7 +31,6 @@ export default class teamspeak6 extends Core {
       return res.body || []
     }
 
-    //  Find the virtualserver_id that matches the voice port we were given
     const serverlist = await call('/serverlist')
     const voicePort = String(this.options.port)
     const vs = serverlist.find(s => String(s.virtualserver_port) === voicePort) || null
@@ -47,7 +42,6 @@ export default class teamspeak6 extends Core {
 
     const vsid = String(vs.virtualserver_id)
 
-    //  serverinfo
     const serverinfoArr = await call(`/${vsid}/serverinfo`)
     const serverinfo = serverinfoArr[0] || {}
     state.raw = { serverinfo }
@@ -57,10 +51,8 @@ export default class teamspeak6 extends Core {
     if ('virtualserver_clientsonline' in serverinfo) state.numplayers = Number(serverinfo.virtualserver_clientsonline)
     if ('virtualserver_version' in serverinfo) state.version = serverinfo.virtualserver_version
 
-    //  clientlist (players)
     const clients = await call(`/${vsid}/clientlist`)
     for (const client of clients) {
-      // Same behavior as teamspeak3.js: include only real users, not serverquery clients
       if (String(client.client_type) !== '0') continue
 
       const player = { ...client }
@@ -70,9 +62,6 @@ export default class teamspeak6 extends Core {
       state.players.push(player)
     }
 
-    // channellist (and try to include topics when possible)
-    // TS WebQuery generally maps raw flags like "-topic" into query params.
-    // If the server ignores it, we still get the channel list.
     const channels = await call(`/${vsid}/channellist`, {
       searchParams: { '-topic': 1 }
     })
