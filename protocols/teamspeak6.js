@@ -4,8 +4,6 @@ export default class teamspeak6 extends Core {
   async run (state) {
     this.usedTcp = true
 
-    const queryPort = this.options.teamspeakQueryPort || 10080
-
     const apiKey = this.options.token
     if (!apiKey) {
       throw new Error('TeamSpeak 6 HTTP query requires an API key. Pass it via options.token.')
